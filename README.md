@@ -38,7 +38,7 @@ Welcome to the PUBG Database Management CLI, a Python-based command-line interfa
 - **Retrieving Best Team Members for a Particular Value**
 - **Retrieving Players Having KD Greater Than or Equal to a Particular Value**
 
-**Note**: I have also uploaded a video 'pubg-tut.mp4' in this same folder to demonstrate the implementation of some of the aforementioned queries!
+**Note**: I have uploaded a video 'pubg-tut.mp4' in this same folder to demonstrate the implementation of some of the aforementioned queries!
 
 - You can also check out the video link here : [Video Link](https://iiitaphyd-my.sharepoint.com/:v:/g/personal/kevin_thakkar_students_iiit_ac_in/EXKdVN4xdwFPotk8h9uLz4kBbERVA1GIyy7GdK3wNj8UfA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=0MW3DA)
 
