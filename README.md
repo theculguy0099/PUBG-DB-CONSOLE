@@ -76,7 +76,7 @@ Enjoy your journey into the world of PUBG Mobile data with our CLI. Explore, ana
 **The Team:**
 
 - [TANISHQ AGARWAL](https://github.com/tanishq-iiith)
-- [SAHIL PATEL](https://github.com/sahil)
+- [SAHIL PATEL](https://github.com/Sahil4804)
 - [GOPAL GARG](https://github.com/jamesbond007G)
 
 
