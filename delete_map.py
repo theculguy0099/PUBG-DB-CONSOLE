@@ -1,11 +1,11 @@
 import pymysql
-import subprocess as sp
-import pymysql.cursors
-from mysqlcursor import cur,con
+import redis
+from mysqlcursor import cur, con
 
+# Initialize Redis client
+redis_client = redis.Redis(host='localhost', port=6379, db=0)
 
 def option_8():
-    
     "This is to delete a Map from the database"
 
     '''take the following as input
@@ -13,11 +13,16 @@ def option_8():
     '''
 
     try:
-        row={}
-        Map_ID=input("Enter Map ID ")
-        query="DELETE from Maps where Map_ID='"+Map_ID+"'"
-        print(query)
-        cur.execute(query)
+        Map_ID = input("Enter Map ID: ")
+
+        # Check if map data exists in Redis cache
+        map_key = f"map:{Map_ID}"
+        if redis_client.exists(map_key):
+            redis_client.delete(map_key)
+            print("Map data removed from Redis cache")
+
+        query = "DELETE FROM Maps WHERE Map_ID = %s"
+        cur.execute(query, (Map_ID,))
         con.commit()
         print("Deleted from database")
 
@@ -25,3 +30,4 @@ def option_8():
         con.rollback()
         print("Failed to delete from database")
         print(">>>>>>>>>>>>>", e)
+
