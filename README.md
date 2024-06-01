@@ -46,7 +46,7 @@ Welcome to the PUBG Database Management CLI, a Python-based command-line interfa
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/Kevinrt0099/PUBG-DB-CONSOLE.git
+   git clone https://github.com/theculguy0099/PUBG-DB-CONSOLE.git
    cd PUBG-DB-CONSOLE
    ```
 2. **Install Dependencies: (upgrade to the newer version of pymysql if any)**
