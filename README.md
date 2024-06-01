@@ -65,6 +65,34 @@ Welcome to the PUBG Database Management CLI, a Python-based command-line interfa
 
 Follow the interactive prompts to perform various database operations and explore the rich functionality of the PUBG Database Management CLI.
 
+## Redis Caching
+
+To `improve performance` and `reduce database load`, we have implemented Redis caching mechanism for read operations. Whenever an operation/query is performed, the data is `cached` in Redis. Subsequent read requests for the same data are served from the cache, thereby `reducing database queries` and `improving response times`.
+
+### Testing with Redis
+
+To test the Redis caching functionality, follow these steps:
+
+1. **Start Redis Server:**
+   Start the Redis server by running the following command in your terminal:
+   ```bash
+   redis-server
+   ```
+2. **Run Redis CLI:**
+   Open another terminal window/tab and run the Redis CLI using the following command:
+   ```bash
+   redis-cli
+   ```
+3. **Test Redis Cache:**
+   After performing read operations using the PUBG Database Management CLI, you can use the `Redis CLI` to check if the data is cached. Use the `HGETALL` command to retrieve all fields and values of a hash stored at a specified key. For example:
+   ```bash
+   HGETALL player:123
+   ```
+   Replace player:123 with the appropriate `cache key` based on your data structure and query.
+
+
+
+
 ## Let the adventure begin!
 
 Enjoy your journey into the world of PUBG Mobile data with our CLI. Explore, analyze, and make the most of your gaming experiences. Let the adventure begin!
@@ -78,6 +106,5 @@ Enjoy your journey into the world of PUBG Mobile data with our CLI. Explore, ana
 - [TANISHQ AGARWAL](https://github.com/tanishq-iiith)
 - [SAHIL PATEL](https://github.com/Sahil4804)
 - [GOPAL GARG](https://github.com/jamesbond007G)
-
 
 Together, we continue to build, innovate, and inspire! 🌐✨
